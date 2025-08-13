@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart - Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            color: white;
+        }
+        .logo-icon {
+            font-size: 2rem;
+            color: white;
+        }
+        .map-container {
+            height: 300px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar with Bootstrap Logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Sanser Super Market" height="40">
+                Sanser Super Market
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="mb-4"><i class="bi bi-envelope-paper"></i> Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label"><i class="bi bi-person-fill"></i> Your Name</label>
+                        <input type="text" class="form-control" id="contactName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label"><i class="bi bi-envelope-fill"></i> Email Address</label>
+                        <input type="email" class="form-control" id="contactEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label"><i class="bi bi-chat-left-text-fill"></i> Message</label>
+                        <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-send-fill"></i> Send Message
+                    </button>
+                </form>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-geo-alt-fill"></i> Our Location</h3>
+                        <div class="map-container">
+                            <!-- Placeholder for map - replace with actual embed code -->
+                            <p><i class="bi bi-map" style="font-size: 2rem;"></i> Map would go here</p>
+                        </div>
+                        <h5><i class="bi bi-clock-fill"></i> Store Hours</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-calendar-week"></i> Monday-Friday: 8:00 AM - 9:00 PM</li>
+                            <li><i class="bi bi-calendar-week"></i> Saturday: 9:00 AM - 8:00 PM</li>
+                            <li><i class="bi bi-calendar-week"></i> Sunday: 10:00 AM - 6:00 PM</li>
+                        </ul>
+                        <h5><i class="bi bi-telephone-fill"></i> Contact Information</h5>
+                        <p><i class="bi bi-house-door-fill"></i> <strong>Address:</strong> 123 Main Street, Bangalore, State Karnataka</p>
+                        <p><i class="bi bi-phone-fill"></i> <strong>Phone:</strong> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> info@supermart.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-cart3"></i> SuperMart</h5>
+                    <p>Your one-stop shop for all grocery needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="bi bi-link"></i> Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><a href="products.html" class="text-white"><i class="bi bi-basket"></i> Products</a></li>
+                        <li><a href="contact.html" class="text-white"><i class="bi bi-telephone"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="bi bi-info-circle"></i> Contact Info</h5>
+                    <p><i class="bi bi-geo-alt"></i> 123 Main Street, Bangalore</p>
+                    <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                    <p><i class="bi bi-envelope"></i> info@sansersupermarket.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Sanser Super Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
