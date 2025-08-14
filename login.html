@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperMart - Login</title>
+    <title>Sanser Super Market - Login</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .navbar-brand {
+            font-family: 'Arial', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
             display: flex;
             align-items: center;
         }
-        .logo-text {
-            font-weight: 700;
-            font-size: 1.5rem;
-            margin-left: 10px;
-            color: white;
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
         }
-        .logo-icon {
-            font-size: 2rem;
-            color: white;
+        .card-header h3 {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar with Bootstrap Logo -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Sanser Super Market" height="40">
+                <img src="images/logo.png" alt="Sanser Super Market Logo" class="logo-img">
                 Sanser Super Market
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,19 +41,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html"><i class="bi bi-basket"></i> Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
+                        <a class="nav-link" href="register.html"><i class="bi bi-person-plus"></i> Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="login.html">Login</a>
+                        <a class="nav-link active" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html"><i class="bi bi-telephone"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -65,8 +65,8 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow">
-                    <div class="card-header bg-success text-white">
-                        <h3 class="text-center mb-0"><i class="bi bi-box-arrow-in-right"></i> Login</h3>
+                    <div class="card-header bg-success text-white text-center">
+                        <h3><i class="bi bi-box-arrow-in-right"></i> Login</h3>
                     </div>
                     <div class="card-body p-4">
                         <form>
@@ -102,7 +102,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5><i class="bi bi-cart3"></i> SuperMart</h5>
+                    <h5><i class="bi bi-cart3"></i> Sanser Super Market</h5>
                     <p>Your one-stop shop for all grocery needs.</p>
                 </div>
                 <div class="col-md-4">
@@ -117,12 +117,12 @@
                     <h5><i class="bi bi-info-circle"></i> Contact Info</h5>
                     <p><i class="bi bi-geo-alt"></i> 123 Main Street, Bangalore</p>
                     <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
-                    <p><i class="bi bi-envelope"></i> info@supermart.com</p>
+                    <p><i class="bi bi-envelope"></i> info@sansersupermarket.com</p>
                 </div>
             </div>
-            <hr>
+            <hr class="my-4">
             <div class="text-center">
-                <p class="mb-0">&copy; 2023 SuperMart. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 Sanser Super Market. All rights reserved.</p>
             </div>
         </div>
     </footer>
